@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
   },
 
   midViewImageContainer: {
-    marginTop: 50,
+    marginTop: 75,
     marginBottom: 50,
   },
 
@@ -26,5 +26,15 @@ export const styles = StyleSheet.create({
     fontSize: 30,
   },
 
-  
+  buttonContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  loginButtonContainer: {
+    color: '#FFFFFF', 
+    fontWeight: '800', 
+    marginTop: 20,
+  },
 });

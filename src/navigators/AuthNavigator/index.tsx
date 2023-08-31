@@ -2,17 +2,23 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import InitialScreen from '../../screens/InitialScreen';
+import LoginScreen from '../../screens/LoginScreen';
 
 const Stack = createStackNavigator();
 
 const AuthNavigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Initial"
+      initialRouteName='Login'
       screenOptions={{
-        headerShown: false,
+        headerStyle:{
+          backgroundColor: '#FFFFFF',
+        },
+        headerTintColor: '#000000',
+        
+        headerShown: true,
       }}>
-      <Stack.Screen name="Initial" component={InitialScreen} />
+      <Stack.Screen name='Login' component={LoginScreen} />
     </Stack.Navigator>
   );
 };

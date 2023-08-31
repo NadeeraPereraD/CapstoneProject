@@ -8,11 +8,17 @@ import SPButtons from '../../components/atoms/SPButtons';
 import SPChips from '../../components/atoms/SPChips';
 import { LocalGoogleImage } from '../../assets/GoogleImage';
 import { LocalFBImages } from '../../assets/FacebookImage';
+import AuthNavigator from '../../navigators/AuthNavigator';
+import {useNavigation} from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack';
 
+const Stack = createStackNavigator();
 
 const InitialScreen = () => {
+  const navigation = useNavigation();
+
   return (
-    <ScrollView style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer} showsVerticalScrollIndicator={true}>
       <Image
         style={styles.imageContainer}
         source={LocalBgImages.backgroundImage}
@@ -43,7 +49,9 @@ const InitialScreen = () => {
           } } 
           logo={LocalFBImages.backgroundImage}        
         />
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => {
+          navigation.navigate('Login');
+        }}>
           <Text style={styles.loginButtonContainer}>Log in</Text>
         </TouchableOpacity>
       </View>

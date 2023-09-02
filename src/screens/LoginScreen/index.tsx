@@ -3,10 +3,16 @@ import React, {useState} from 'react';
 import {styles} from './styles';
 import SPTextField from '../../components/molecules/SPTextField';
 import SPLoginButtons from '../../components/atoms/SPLoginButtons';
+import {useNavigation} from '@react-navigation/native'
 
 const LoginScreen = () => {
+
+  const navigation = useNavigation();
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+
 
   return (
     <View style={styles.mainContainer}>
@@ -27,7 +33,10 @@ const LoginScreen = () => {
       />
       <View style={styles.buttonContainer}>
         <SPLoginButtons title="Log in" onPress={() => {
-          console.log(setUsername);         
+          // console.log(username); 
+          if(username && password) {
+            navigation.navigate('Home')
+          }       
         }} />
       </View>
     </View>

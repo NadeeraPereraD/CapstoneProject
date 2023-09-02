@@ -2,15 +2,15 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { styles } from './styles';
 
-type FilledButtonProps = {
+type LoginButtonProps = {
     title: string;
     onPress : () => void;
 }
 
-const SPButtons = ({
+const SPLoginButtons = ({
     title,
     onPress    
-}: FilledButtonProps) => {
+}: LoginButtonProps) => {
   return (
     <View>
       <TouchableOpacity style={styles.mainContainer} onPress={onPress}>
@@ -21,5 +21,5 @@ const SPButtons = ({
   )
 }
 
-export default SPButtons
+export default SPLoginButtons
 

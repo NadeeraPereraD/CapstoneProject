@@ -12,9 +12,9 @@ const AuthNavigator = () => {
       initialRouteName='Login'
       screenOptions={{
         headerStyle:{
-          backgroundColor: '#FFFFFF',
+          backgroundColor: '#000000',
         },
-        headerTintColor: '#000000',
+        headerTintColor: '#FFFFFF',
         
         headerShown: true,
       }}>

@@ -35,7 +35,7 @@ const LoginScreen = () => {
         <SPLoginButtons title="Log in" onPress={() => {
           // console.log(username); 
           if(username && password) {
-            navigation.navigate('Home')
+            navigation.navigate('BottomTabs')
           }       
         }} />
       </View>

@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeStackNavigator from './HomeStackNavigator';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Fontisto from 'react-native-vector-icons/Fontisto';
 import SelectedHomeScreen from '../../screens/SelectedHomeScreen';
 import YourLibraryScreen from '../../screens/YourLibraryScreen';
 import HomeScreen from '../../screens/HomeScreen';
@@ -19,7 +20,12 @@ const BottomTabNavigator = () => {
             tabBarActiveTintColor: '#FFFFFF',
             tabBarInactiveTintColor: '#E5E5E5',
             headerShown: false,
-            tabBarHideOnKeyboard: true,
+            tabBarHideOnKeyboard: false,
+            tabBarStyle:{
+                backgroundColor: '#000000'
+            },
+            
+            // headerTintColor: '#000000'
         }}>
         <Tab.Screen
             name='HomeTab'
@@ -27,7 +33,7 @@ const BottomTabNavigator = () => {
             options={{
                 tabBarLabel: 'Home',
                 tabBarIcon: () => (
-                    <MaterialCommunityIcons name='home-variant'/>
+                    <MaterialCommunityIcons name='home-variant' color={'#FFFFFF'} size={20}/>
                 ),
             }}       
         />
@@ -36,11 +42,11 @@ const BottomTabNavigator = () => {
                 component={SelectedHomeScreen}
                 options={{
                     tabBarLabel: 'Search',
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons
-                            name="tag-multiple"
-                            color={color}
-                            size={size}
+                    tabBarIcon: () => (
+                        <Fontisto
+                            name="search"
+                            color= {'#FFFFFF'}
+                            size={20}
                         />
                     ),
                 }}
@@ -50,16 +56,16 @@ const BottomTabNavigator = () => {
                 component={YourLibraryScreen}
                 options={{
                     headerShown: false,
-                    headerStyle: {
-                        backgroundColor: '#7240FF',
-                    },
-                    headerTintColor: '#fff',
-                    headerTitleStyle: {
-                        fontWeight: '600',
-                    },
+                    // headerStyle: {
+                    //     backgroundColor: '#7240FF',
+                    // },
+                    // headerTintColor: '#fff',
+                    // headerTitleStyle: {
+                    //     fontWeight: '600',
+                    // },
                     // headerRight: () => <DAHeaderRight />,
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialIcons name="info" color={color} size={size} />
+                    tabBarIcon: () => (
+                        <MaterialCommunityIcons name="bookshelf" color={'#FFFFFF'} size={20} />
                     ),
                     // tabBarBadge: 3,
                 }}

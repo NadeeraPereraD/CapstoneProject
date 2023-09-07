@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     },
     greetingTextContainer:{
         color: '#FFFFFF',
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: '800',
         marginTop: 20,
         marginBottom: 20,

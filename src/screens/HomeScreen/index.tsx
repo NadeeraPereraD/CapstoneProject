@@ -38,7 +38,7 @@ const HomeScreen = () => {
   useEffect(() => {
     const greetings = getGreetings();
     setGreetings(greetings);
-  }, []);
+  }, [greetings]);
 
 
 

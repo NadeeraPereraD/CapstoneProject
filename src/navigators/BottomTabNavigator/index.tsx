@@ -5,9 +5,9 @@ import HomeStackNavigator from './HomeStackNavigator';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
-import SelectedHomeScreen from '../../screens/SelectedHomeScreen';
 import YourLibraryScreen from '../../screens/YourLibraryScreen';
 import HomeScreen from '../../screens/HomeScreen';
+import SearchScreen from '../../screens/SearchScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -39,7 +39,7 @@ const BottomTabNavigator = () => {
         />
         <Tab.Screen
                 name="Search"
-                component={SelectedHomeScreen}
+                component={SearchScreen}
                 options={{
                     tabBarLabel: 'Search',
                     tabBarIcon: () => (

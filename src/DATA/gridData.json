@@ -1,0 +1,35 @@
+{
+    "gridData": [
+      {
+        "id": "1",
+        "artistName": "Machine Gun",
+        "artWorkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8a/8d/14/8a8d14a5-1bdd-1faf-6c3c-21c022a809d7/20UMGIM66015.rgb.jpg/300x300bb.jpg"
+      },
+      {
+        "id": "2",
+        "artistName": "The Office",
+        "artWorkUrl": "https://is2-ssl.mzstatic.com/image/thumb/Podcasts126/v4/25/a6/a6/25a6a6da-773f-0058-d32c-bdd0b24301b0/mza_17420980210924457392.jpg/300x300bb.jpg"
+      },
+      {
+        "id": "3",
+        "artistName": "Greta Van Fleet",
+        "artWorkUrl": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/72/c7/e9/72c7e9db-75ce-ffc2-6bec-dceee843adb9/18UMGIM53994.rgb.jpg/300x300bb.jpg"
+      },
+      {
+        "id": "4",
+        "artistName": "Bryce Vine",
+        "artWorkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/90/30/1c/90301c9e-2e73-1bcf-8b5a-d3bb86233378/093624897194.jpg/300x300bb.jpg"
+      },
+      {
+        "id": "5",
+        "artistName": "Chone",
+        "artWorkUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/14/31/6a/14316aae-ccc2-7c47-1096-145bf47a0a3f/888174245676.jpg/300x300bb.jpg"
+      },
+      {
+        "id": "6",
+        "artistName": "Tycho",
+        "artWorkUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/7b/b8/d6/7bb8d640-dfdc-1473-3948-4060af9a3819/804297820828.jpg/300x300bb.jpg"
+      }
+    ]
+  }
+  

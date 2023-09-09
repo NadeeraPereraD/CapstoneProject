@@ -16,25 +16,32 @@ const SearchScreen = () => {
 
   return (
     <View style={styles.mainContainer}>
-        <View style={styles.subContainer}>
-          <Fontisto
-            style={styles.iconContainer}
-            name="search"
-            size={20}
-            color="#FFFFFF"
-          />
-          <SPSearchTextField
-            value={searchName}
-            onChange={searchName => {
-              setSearchName(searchName);
-            }}
-            placeholderText="Search"
-            keyboardType="default"
-          />
-        </View>
+      <View style={styles.headerContainer}>
+      <Fontisto
+          //style={styles.iconContainer}
+          style={styles.iconContainer}
+           name="search"
+           size={20}
+           color="#FFFFFF"
+         />
+         <SPSearchTextField
+           value={searchName}
+           onChange={searchName => {
+             setSearchName(searchName);
+           }}
+           placeholderText="Search"
+           keyboardType="default"
+         />
+        <View>
         <TouchableOpacity onPress={() => {}}>
-          <Text style={styles.loginButtonContainer}>Cancel</Text>
-        </TouchableOpacity>
+        <Text style={styles.loginButtonContainer}>Cancel</Text>
+       </TouchableOpacity>
+        </View>
+      
+      </View>
+
+      
+
     </View>
   );
 };
